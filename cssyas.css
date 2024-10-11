@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('unhas-banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.produtos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 1.1em;
+    color: #e63946;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .galeria {
+        flex-direction: column;
+    }
+
+    .produto {
+        width: 80%;
+    }
+
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
